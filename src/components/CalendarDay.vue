@@ -1,6 +1,6 @@
 <template>
 <div class="day column" @click="setActiveDay(day.id)">
-    <div class="day-banner has-text-centered">{{ day.addvTitle }}</div>
+    <div class="day-banner has-text-centered">{{ day.abbvTitle }}</div>
     <div class="day-details">
         <div class="day-number">{{ day.id }}</div>
         <CalendarEvent v-for="(event, index) in day.events"
